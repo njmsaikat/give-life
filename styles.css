@@ -504,6 +504,10 @@ a{
 .image-block .col-sm-6 {
     padding: 0;
 }
+
+.last-input input[type="text"] {
+    font-size: 12px;
+}
 }
 
 @media (max-width: 767px){
