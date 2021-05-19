@@ -239,6 +239,7 @@ a{
 
 .img-txt-one-row {
     padding-top: 25px;
+    align-items: center;
 }
 
 /*text block*/
@@ -584,6 +585,10 @@ a{
     }
     .dontae-head-inner {
         font-size: 0.8em;
+    }
+
+    .donate-box-input {
+        font-size: 20px;
     }
 
 }
