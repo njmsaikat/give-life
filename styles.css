@@ -154,7 +154,19 @@ a{
     color: #fff;
 }
 
-.last-input {
+.other-amount{
+    display: none;
+}
+
+.other-amount input {
+    width: 100%;
+}
+.other-amount {
+    width: 100%;
+}
+
+
+/* .last-input {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -167,7 +179,7 @@ a{
 
 .last-input .dollar {
     width: 50%;
-}
+} */
 
 .dollar {
     font-weight: 900;

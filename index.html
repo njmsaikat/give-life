@@ -14,6 +14,7 @@
     <!--custom styles-->
     <link rel="stylesheet" href="styles.css">
 
+
     <title>Give Life</title>
   </head>
   <body>
@@ -98,10 +99,16 @@
 
                                 </div>
                                 <div class="donate-option-amount">
-                                    <div class="amount-details last-input">
-                                        <span class="dollar"><input type="text" placeholder="Other"></span>
-                                        <span class="monthly">/MO</span>
+                                    <div class="amount-details">
+                                        <div onclick="btnClick()">
+                                            <span class="dollar">Other</span>
+                                            <span class="monthly">/MO</span> 
+                                        </div>
+                                        <div class="other-amount" id="other-amount">
+                                            <input type="text">
+                                        </div>
                                     </div>
+
 
                                 </div>
     
@@ -407,7 +414,9 @@
 
 
 
+    <!--custom js-->
 
+    <script src="custom.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
