@@ -348,12 +348,13 @@ a{
 }
 
 
-/* #other-amount-1{
-   display: none;
+.show{
+    display: block;
 }
-#other-amount-2{
-   display: none;
-} */
+
+.hide{
+    display: none;
+}
 
 .other-amount input {
     width: 90%;

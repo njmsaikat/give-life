@@ -84,3 +84,81 @@ function isNumber(evt) {
   }
   return true;
 }
+
+
+
+/*custom js for top button*/
+
+        var x = document.getElementById("other-amount-1");
+        document.getElementById("amount-btn-1").addEventListener("click", showInput);
+
+        document.getElementById("amount-1").addEventListener("click", hideInput);
+        document.getElementById("amount-2").addEventListener("click", hideInput);
+        document.getElementById("amount-3").addEventListener("click", hideInput);
+        document.getElementById("amount-4").addEventListener("click", hideInput);
+        document.getElementById("amount-5").addEventListener("click", hideInput);
+
+        document.getElementById("once").addEventListener("click", hideInput);
+
+        function showInput() {
+            
+            x.classList.add("show");
+            x.classList.remove("hide");
+        }
+
+        function hideInput() {
+            
+          x.classList.add("hide");
+          x.classList.remove("show");
+      }
+
+
+      var y = document.getElementById("other-amount-2");
+      document.getElementById("amount-btn-2").addEventListener("click", showIn);
+
+      document.getElementById("amount-6").addEventListener("click", hideIn);
+      document.getElementById("amount-7").addEventListener("click", hideIn);
+      document.getElementById("amount-8").addEventListener("click", hideIn);
+
+      document.getElementById("month").addEventListener("click", hideIn);
+
+      function showIn() {
+          
+          y.classList.add("show");
+          y.classList.remove("hide");
+      }
+
+      function hideIn() {
+          
+        y.classList.add("hide");
+        y.classList.remove("show");
+    }
+
+
+
+      //   function btnClick1() {
+      //     var x = document.getElementById("other-amount-1");
+      //     if (x.style.display === "none") {
+      //         x.style.display = "block";
+      //     } 
+      //     else if (x.style.display === "block") {
+      //         x.style.display = "block";
+      //     } 
+      //     else {
+      //         x.style.display = "none";
+      //     }
+      // }
+
+      // function btnClick2() {
+      //     var x = document.getElementById("other-amount-2");
+      //     if (x.style.display === "none") {
+      //         x.style.display = "block";
+      //     } 
+      //     else if (x.style.display === "block") {
+      //         x.style.display = "block";
+      //     } 
+      //     else {
+      //         x.style.display = "none";
+      //     }
+      // }
+

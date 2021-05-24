@@ -73,35 +73,35 @@ define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cg
                             <div class="donate-box-content">
                                 <div id="month_donate_list" class="donate-option-list open">
                                     <div class="donate-option-amount">
-                                        <div data-price="10" class="amount-details">
+                                        <div data-price="10" class="amount-details" id="amount-1">
                                             <span class="dollar">$10</span>
                                             <span class="monthly">/MO</span>
                                         </div>
                                     </div>
 
                                     <div class="donate-option-amount">
-                                        <div data-price="25" class="amount-details">
+                                        <div data-price="25" class="amount-details" id="amount-2">
                                             <span class="dollar">$25</span>
                                             <span class="monthly">/MO</span>
                                         </div>
                                     </div>
 
                                     <div class="donate-option-amount">
-                                        <div data-price="50" class="amount-details default-ad active">
+                                        <div data-price="50" class="amount-details default-ad active" id="amount-3">
                                             <span class="dollar">$50</span>
                                             <span class="monthly">/MO</span>
                                         </div>
                                     </div>
 
                                     <div class="donate-option-amount">
-                                        <div data-price="100" class="amount-details">
+                                        <div data-price="100" class="amount-details" id="amount-4">
                                             <span class="dollar">$100</span>
                                             <span class="monthly">/MO</span>
                                         </div>
                                     </div>
 
                                     <div class="donate-option-amount">
-                                        <div data-price="500" class="amount-details">
+                                        <div data-price="500" class="amount-details" id="amount-5">
                                             <span class="dollar">$500</span>
                                             <span class="monthly">/MO</span>
                                         </div>
@@ -112,12 +112,12 @@ define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cg
                                             <span class="dollar"><input type="text" onkeypress="return isNumber(event)" placeholder="Other"></span>
                                             <span class="monthly">/MO</span>
                                         </div> -->
-                                        <div class="amount-details">
-                                            <div onclick="btnClick1()">
+                                        <div class="amount-details" id="amount-btn-1">
+                                            <!-- <div onclick="btnClick1()"> -->
                                                 <span class="dollar">Other</span>
                                                 <span class="monthly">/MO</span> 
-                                            </div>
-                                            <div class="other-amount" id="other-amount-1" style="display: none;">
+                                            <!-- </div> -->
+                                            <div class="other-amount hide" id="other-amount-1">
                                                 <input type="text">
                                             </div>
                                         </div>
@@ -127,17 +127,17 @@ define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cg
                                 
                                 <div id="once_donate_list" class="donate-option-list">
                                     <div class="donate-option-amount">
-                                        <div data-price="50" class="amount-details">
+                                        <div data-price="50" class="amount-details" id="amount-6">
                                             <span class="dollar">$50</span>
                                         </div>
                                     </div>
                                     <div class="donate-option-amount">
-                                        <div data-price="100" class="amount-details default-ad">
+                                        <div data-price="100" class="amount-details default-ad" id="amount-7">
                                             <span class="dollar">$100</span>
                                         </div>
                                     </div>
                                     <div class="donate-option-amount">
-                                        <div data-price="500" class="amount-details">
+                                        <div data-price="500" class="amount-details" id="amount-8">
                                             <span class="dollar">$500</span>
                                         </div>
                                     </div>
@@ -147,12 +147,12 @@ define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cg
                                             <span class="dollar"><input type="text" onkeypress="return isNumber(event)" placeholder="Other Amount"></span>
                                         </div> -->
 
-                                        <div class="amount-details">
-                                            <div onclick="btnClick2()">
+                                        <div class="amount-details" id="amount-btn-2">
+                                            <!-- <div onclick="btnClick2()"> -->
                                                 <span class="dollar">Other</span>
                                                 <span class="monthly">/MO</span> 
-                                            </div>
-                                            <div class="other-amount" id="other-amount-2" style="display: none;">
+                                            <!-- </div> -->
+                                            <div class="other-amount" id="other-amount-2">
                                                 <input type="text">
                                             </div>
                                         </div>
@@ -414,33 +414,5 @@ define('PAYPAL_URL', (PAYPAL_SANDBOX == true)?"https://www.sandbox.paypal.com/cg
     </footer>
     <script src="custom.js" referrerpolicy="no-referrer"></script>
 
-    <script>
-        function btnClick1() {
-    var x = document.getElementById("other-amount-1");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } 
-    else if (x.style.display === "block") {
-      x.style.display = "block";
-    } 
-    else {
-      x.style.display = "none";
-    }
-  }
-
-          function btnClick2() {
-    var x = document.getElementById("other-amount-2");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } 
-        else if (x.style.display === "block") {
-      x.style.display = "block";
-    } 
-
-    else {
-      x.style.display = "none";
-    }
-  }
-    </script>
 </body>
 </html>
